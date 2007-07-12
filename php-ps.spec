@@ -5,8 +5,8 @@
 
 Summary:	An extension to create PostScript files for php
 Name:		php-%{modname}
-Version:	1.3.4
-Release:	%mkrel 7
+Version:	1.3.5
+Release:	%mkrel 1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/%{modname}
