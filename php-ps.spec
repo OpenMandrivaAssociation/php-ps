@@ -5,12 +5,12 @@
 
 Summary:	An extension to create PostScript files for php
 Name:		php-%{modname}
-Version:	1.3.5
-Release:	%mkrel 3
+Version:	1.3.6
+Release:	%mkrel 1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/%{modname}
-Source0:	http://pecl.php.net/get/%{modname}-%{version}.tar.bz2
+Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libpslib-devel
 BuildRequires:	libgd-devel
@@ -23,6 +23,7 @@ files. Its api is modelled after the pdf extension.
 %prep
 
 %setup -q -n %{modname}-%{version}
+[ "../package.xml" != "/" ] && mv ../package.xml .
 
 %build
 %serverbuild
@@ -60,10 +61,9 @@ fi
 
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
-[ "../package.xml" != "/" ] && rm -f ../package.xml
 
 %files 
 %defattr(-,root,root)
-%doc CREDITS tests examples
+%doc CREDITS tests examples package.xml
 %attr(0644,root,root) %config(noreplace) %{_sysconfdir}/php.d/%{inifile}
 %attr(0755,root,root) %{_libdir}/php/extensions/%{soname}
