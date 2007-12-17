@@ -14,7 +14,6 @@ Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libpslib-devel
 BuildRequires:	libgd-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 ps is an extension similar to the pdf extension but for creating PostScript
