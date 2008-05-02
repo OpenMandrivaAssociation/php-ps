@@ -6,7 +6,7 @@
 Summary:	An extension to create PostScript files for php
 Name:		php-%{modname}
 Version:	1.3.6
-Release:	%mkrel 3
+Release:	%mkrel 4
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/%{modname}
@@ -14,7 +14,7 @@ Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libpslib-devel >= 0.4.1
 BuildRequires:	libgd-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 ps is an extension similar to the pdf extension but for creating PostScript
