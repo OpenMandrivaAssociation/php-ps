@@ -12,7 +12,7 @@ License:	PHP License
 URL:		http://pecl.php.net/package/%{modname}
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 BuildRequires:	php-devel >= 3:5.2.0
-BuildRequires:	libpslib-devel >= 0.4.1
+BuildRequires:	pslib-devel >= 0.4.1
 BuildRequires:	libgd-devel
 Requires:	php-imagick
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
