@@ -6,7 +6,7 @@
 Summary:	An extension to create PostScript files for php
 Name:		php-%{modname}
 Version:	1.3.6
-Release:	%mkrel 23
+Release:	%mkrel 24
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/%{modname}
