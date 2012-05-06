@@ -9,8 +9,9 @@ Version:	1.3.6
 Release:	%mkrel 25
 Group:		Development/PHP
 License:	PHP License
-URL:		http://pecl.php.net/package/%{modname}
+URL:		http://pecl.php.net/package/ps
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
+Patch0:		ps-1.3.6-php54x.diff
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	pslib-devel >= 0.4.1
 BuildRequires:	libgd-devel
@@ -25,6 +26,8 @@ files. Its api is modelled after the pdf extension.
 
 %setup -q -n %{modname}-%{version}
 [ "../package.xml" != "/" ] && mv ../package.xml .
+
+%patch0 -p0
 
 %build
 %serverbuild
