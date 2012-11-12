@@ -1,0 +1,11 @@
+--- ps.c	2007-11-27 10:40:14.000000000 +0100
++++ ps.c.oden	2012-05-06 11:59:58.193323493 +0200
+@@ -55,7 +55,7 @@ static int le_psdoc;
+ 
+ /* {{{ ps_functions[]
+  */
+-function_entry ps_functions[] = {
++zend_function_entry ps_functions[] = {
+ 	PHP_FE(ps_new, NULL)
+ 	PHP_FE(ps_delete, NULL)
+ 	PHP_FE(ps_open_file, NULL)
