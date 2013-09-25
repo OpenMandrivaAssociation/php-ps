@@ -5,13 +5,12 @@
 
 Summary:	An extension to create PostScript files for php
 Name:		php-%{modname}
-Version:	1.3.6
-Release:	26
+Version:	1.3.7
+Release:	1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/ps
-Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
-Patch0:		ps-1.3.6-php54x.diff
+Source0:	http://pecl.php.net/get/ps-%{version}.tgz
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	pslib-devel >= 0.4.1
 BuildRequires:	libgd-devel
@@ -26,7 +25,6 @@ files. Its api is modelled after the pdf extension.
 %setup -q -n %{modname}-%{version}
 [ "../package.xml" != "/" ] && mv ../package.xml .
 
-%patch0 -p0
 
 %build
 %serverbuild
@@ -214,4 +212,5 @@ fi
 
 * Fri Aug 04 2006 Oden Eriksson <oeriksson@mandriva.com> 1.3.4-1mdv2007.0
 - initial Mandriva package
+
 
