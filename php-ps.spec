@@ -9,7 +9,7 @@ Version:	1.3.7
 Release:	2
 Group:		Development/PHP
 License:	PHP License
-URL:		http://pecl.php.net/package/ps
+URL:		https://pecl.php.net/package/ps
 Source0:	http://pecl.php.net/get/ps-%{version}.tgz
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	pslib-devel >= 0.4.1
