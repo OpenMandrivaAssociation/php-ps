@@ -11,6 +11,11 @@ Group:		Development/PHP
 License:	PHP License
 URL:		https://pecl.php.net/package/ps
 Source0:	http://pecl.php.net/get/ps-%{version}.tgz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	pslib-devel >= 0.4.1
 BuildRequires:	libgd-devel
